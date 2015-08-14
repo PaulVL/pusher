@@ -10,7 +10,11 @@ class AndroidPusher
 
 	protected $registrationIds = array();
 
-	private $api_access_key = 'GCM_API_ACCESS_KEY';
+	private $api_access_key;
+
+	public function __construct() {
+		$this->api_access_key = env('GCM_API_ACCESS_KEY', ''); 
+	}
 
 	public function addRecipent( $registrationId ) {
 		if( is_array( $registrationId ) ) {
