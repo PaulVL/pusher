@@ -1,0 +1,22 @@
+{
+    "name": "paulvl/pusher",
+    "description": "Push notification package!",
+    "keywords": ["push", "notification", "php"],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Paul Vidal",
+            "email": "paul.vidal.lujan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PaulVL\\Pusher\\": "src/"
+        }
+    }
+}
